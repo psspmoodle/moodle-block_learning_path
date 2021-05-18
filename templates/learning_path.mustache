@@ -1,0 +1,17 @@
+<div class="container">
+    <h5>Current enrolments</h5>
+    <div class="row border-top border-left mb-4">
+        {{#items}}
+            {{#isenroled}}
+                {{> block_learning_path/learning_path_item }}
+            {{/isenroled}}
+        {{/items}}
+    </div>
+    <h5>Courses in this Learning Path</h5>
+    <div class="row border-top border-left">
+
+        {{#items}}
+            {{> block_learning_path/learning_path_item }}
+        {{/items}}
+    </div>
+</div>
